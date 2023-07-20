@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import "./styles/_variables.scss";
+
+
+html,
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body.dark {
+  @include darken();
+}
+
+body.light {
+  @include lighten();
+}
+
+main {
+  color: var(--textColor);
+}
+
+#bg-vanta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 165vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+@media (min-width: 769px) {
+  #bg-vanta {
+    height: 100vh;
+  }
+}

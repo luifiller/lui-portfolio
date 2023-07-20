@@ -1,0 +1,15 @@
+// material design theme variables
+$textColor_light: #000000;
+
+
+$textColor_dark: #F6F1D5;
+
+// mixin that enables css variables in light mode
+@mixin lighten() {
+  --textColor: #{$textColor_light};
+}
+
+// mixin that enables css variables in dark mode
+@mixin darken() {
+  --textColor: #{$textColor_dark};
+}

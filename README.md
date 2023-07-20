@@ -33,26 +33,41 @@
 
 ## Rodando localmente?
 Este projeto foi, inicialmente, gerado com:
-- [Angular CLI](https://github.com/angular/angular-cli) versão 16.1.0.
+- [Angular CLI](https://github.com/angular/angular-cli) versão 16.1.0
 - [Node.JS](https://nodejs.org/en) versão 18.16.0
 - [NPM](https://www.npmjs.com/) versão 9.6.5
+- [Three.JS](https://threejs.org/) versão ^0.154.0
+- [Vanta.JS](https://www.vantajs.com/?effect=clouds) versão ^0.5.24
+- [Prettier](https://prettier.io/) versão 9.19.0
 
 ### Clone o projeto
 ```bash
-  git clone https://github.com/luizfiller/plumeria
+  git clone https://github.com/luizfiller/lui-portfolio
 ```
 
-## Servidor de desenvolvimento
+### Instale as dependências
+Instale as dependências com suas respectivas versões, listadas em [Rodando localmente](https://github.com/luizfiller/lui-portfolio/edit/master/README.md#rodando-localmente).
+```bash
+  npm i
+  npm i @angular/cli@16.1.0
+  npm i three@0.154.0
+  npm i vanta@0.5.24
+``` 
+
+### Servidor de desenvolvimento
 Execute `ng serve` para um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. A aplicação será recarregada automaticamente se você alterar qualquer um dos arquivos de origem.
 
-## Construir
+### Construir
 Execute `ng build` para compilar o projeto. Os artefatos de compilação serão armazenados no diretório `dist/`.
 
-## Executando testes de unidade
+### Executando testes de unidade
 Execute `ng test` para executar os testes de unidade via [Karma](https://karma-runner.github.io).
 
-## Executando testes de ponta a ponta
+### Executando testes de ponta a ponta
 Execute `ng e2e` para executar os testes de ponta a ponta por meio de uma plataforma de sua escolha. Para usar esse comando, você precisa primeiro adicionar um pacote que implemente recursos de teste de ponta a ponta.
 
-## Mais ajuda
+### Mais ajuda
 Para obter mais ajuda sobre o Angular CLI, use `ng help` ou confira a página [Angular CLI Overview and Command Reference](https://angular.io/cli).
+
+## Créditos
+- Lib de light/dark mode de [Pahan Perera](https://github.com/PahanPerera/angular-light-dark-app).
