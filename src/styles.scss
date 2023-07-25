@@ -1,3 +1,22 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$lui-portfolio-primary: mat.define-palette(mat.$indigo-palette);
+$lui-portfolio-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+$lui-portfolio-warn: mat.define-palette(mat.$red-palette);
+
+$lui-portfolio-theme: mat.define-light-theme((
+  color: (
+    primary: $lui-portfolio-primary,
+    accent: $lui-portfolio-accent,
+    warn: $lui-portfolio-warn,
+  )
+));
+
+@include mat.all-component-themes($lui-portfolio-theme);
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import "./styles/_variables.scss";
 

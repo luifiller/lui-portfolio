@@ -1,15 +1,30 @@
-// material design theme variables
+// light material design theme variables
 $textColor_light: #000000;
+$lg-text: #000;
+$lg-on-surface: #191C1C;
+$lg-on-surface-variant: #3F4948;
+$primary: #006A69;
 
-
+// dark material design theme variables
 $textColor_dark: #F6F1D5;
+$dk-text: #F6F1D5;
+$dk-on-surface: #E8E7DF;
+$dk-on-surface-variant: #CECDC3;
+$primary: #062744;
+
 
 // mixin that enables css variables in light mode
 @mixin lighten() {
-  --textColor: #{$textColor_light};
+  --textColor: #{lg-text};
+  --textOnSurface: #{lg-on-surface};
+  --textOnSurfaceVariant: #{lg-on-surface-variant};
+  --primary: #{primary};
 }
 
 // mixin that enables css variables in dark mode
 @mixin darken() {
-  --textColor: #{$textColor_dark};
+  --textColor: #{$dk-text};
+  --textOnSurface: #{dk-on-surface};
+  --textOnSurfaceVariant: #{dk-on-surface-variant};
+  --primary: #{primary};
 }
