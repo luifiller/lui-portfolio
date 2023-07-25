@@ -1,0 +1,32 @@
+<div class="container-toolbar">
+  <mat-toolbar class="toolbar">
+    <img [src]="imagePath" alt="Logotipo preto escrito Lui" />
+
+    <span class="example-spacer"></span>
+
+    <div class="container-icons">
+      <button mat-icon-button (click)="changeThemeMode()">
+        <mat-icon
+          fontSet="material-icons-outlined"
+          [style.color]="iconColor"
+          class="icon"
+          >brightness_2</mat-icon
+        >
+      </button>
+
+      <!-- <button mat-icon-button>
+                <mat-icon fontSet="material-icons-outlined" [style.color]="iconColor" class="icon">brightness_5</mat-icon>
+            </button> -->
+
+      <button mat-icon-button>
+        <mat-icon fontSet="material-icons-sharp" [style.color]="iconColor" class="icon"
+          >language</mat-icon
+        >
+      </button>
+
+      <button mat-icon-button>
+        <mat-icon fontSet="material-icons-round" [style.color]="iconColor" class="icon">dehaze</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
+</div>
